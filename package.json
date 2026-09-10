@@ -1,0 +1,10 @@
+{
+  "name": "postgresql-from-mysql-book",
+  "version": "1.0.0",
+  "private": true,
+  "description": "面向 MySQL 开发者的 PostgreSQL 原理、实践与调优教程",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "build": "node scripts/build-site.mjs"
+  }
+}

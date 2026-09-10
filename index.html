@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="面向 MySQL 开发者的 PostgreSQL 原理、实践与调优教程"
+    />
+    <meta name="theme-color" content="#f7f9fc" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; img-src 'self' data: https:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+    />
+    <title>从 MySQL 到 PostgreSQL：机制、实践与调优</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"
+    ></script>
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body>
+    <div class="reading-progress" aria-hidden="true">
+      <div class="reading-progress__bar" id="reading-progress"></div>
+    </div>
+
+    <header class="site-header">
+      <button
+        class="icon-button menu-button"
+        id="menu-button"
+        type="button"
+        aria-label="打开章节目录"
+        aria-expanded="false"
+        aria-controls="book-sidebar"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <a class="brand" href="./" aria-label="返回本书前言">
+        <span class="brand__mark" aria-hidden="true">PG</span>
+        <span class="brand__text">
+          <strong>从 MySQL 到 PostgreSQL</strong>
+          <small>机制、实践与调优</small>
+        </span>
+      </a>
+
+      <a
+        class="github-link"
+        href="https://github.com/liumingliang0305-sudo/postgresql-from-mysql-book"
+        target="_blank"
+        rel="noreferrer"
+      >
+        GitHub
+        <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="book-sidebar" id="book-sidebar" aria-label="书籍目录">
+        <div class="sidebar__heading">
+          <span>目录</span>
+          <span id="chapter-count">34 章</span>
+        </div>
+        <nav id="book-navigation" aria-label="章节导航">
+          <div class="nav-skeleton" aria-label="正在加载目录">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </nav>
+      </aside>
+
+      <button
+        class="sidebar-scrim"
+        id="sidebar-scrim"
+        type="button"
+        aria-label="关闭章节目录"
+        tabindex="-1"
+      ></button>
+
+      <main class="reader" id="main-content" tabindex="-1">
+        <div class="article-meta" id="article-meta" aria-live="polite">
+          <span>开始之前</span>
+          <span class="article-meta__rule"></span>
+          <span>PostgreSQL 18</span>
+        </div>
+
+        <article class="markdown-body" id="article-content" aria-live="polite">
+          <div class="article-loading">
+            <span class="loading-line loading-line--short"></span>
+            <span class="loading-line"></span>
+            <span class="loading-line"></span>
+            <span class="loading-line loading-line--medium"></span>
+          </div>
+        </article>
+
+        <nav class="chapter-pager" id="chapter-pager" aria-label="前后章节"></nav>
+      </main>
+
+      <aside class="page-toc" aria-label="本页目录">
+        <div class="page-toc__title">本页内容</div>
+        <nav id="page-toc"></nav>
+      </aside>
+    </div>
+
+    <noscript>
+      <div class="noscript-message">
+        此阅读页面需要 JavaScript 来加载 Markdown。你仍可在 GitHub 仓库中直接阅读章节文件。
+      </div>
+    </noscript>
+  </body>
+</html>
